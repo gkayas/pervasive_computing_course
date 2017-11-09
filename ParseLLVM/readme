@@ -1,0 +1,4 @@
+1. Place the IR file with parse_IR.jar in the same folder.
+2. run:
+	$java -jar parse_IR.jar <IR_file_name>
+3. get the output in "out.csv".

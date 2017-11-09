@@ -1,0 +1,45 @@
+"0","pushl	%ebp
+movl	%esp, %ebp
+subl	$28, %esp
+movl	$0, -4(%ebp)
+movl	$1, -8(%ebp)
+movl	$2, -12(%ebp)
+cmpl	$2, -12(%ebp)
+jne	.LBB0_2
+","source.c:5:6
+source.c:6:6
+source.c:8:8
+source.c:8:6
+"
+"1","movl	-12(%ebp), %eax
+addl	$1, %eax
+movl	%eax, -12(%ebp)
+","source.c:10:3
+"
+"2","movl	$3, -16(%ebp)
+movl	$4, -20(%ebp)
+","source.c:13:6
+source.c:14:6
+"
+"3","cmpl	$5, -8(%ebp)
+jge	.LBB0_5
+","source.c:16:11
+source.c:16:2
+"
+"4","movl	-8(%ebp), %eax
+addl	$1, %eax
+movl	%eax, -8(%ebp)
+jmp	.LBB0_3
+","source.c:18:3
+source.c:16:2
+"
+"5","movl	$5, -24(%ebp)
+movl	$6, -28(%ebp)
+movl	-4(%ebp), %eax
+addl	$28, %esp
+popl	%ebp
+retl
+","source.c:21:6
+source.c:22:6
+source.c:23:1
+"
